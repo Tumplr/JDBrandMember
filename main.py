@@ -256,7 +256,7 @@ if __name__ == '__main__':
     # 忽略警告
     requests.packages.urllib3.disable_warnings()
 
-    CONFIG = yaml.safe_load(open(get_file_path("config.yaml"), "r"))
+    CONFIG = yaml.safe_load(open(get_file_path("config.yaml"), "r",encoding='utf-8'))
 
     process = [0, 0, 0]
     # 获取 shopid 列表
